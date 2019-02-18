@@ -11,13 +11,21 @@ namespace Sweepstakes
         string firstName;
         string lastName;
         string emailAddress;
-        public int registrationNumber;
+        int registrationNumber;
+
+        public int getRegistrationNumber(int min, int max)
+        {
+            Random number = new Random();
+            return  number.Next(1, 100);
+        }
 
         public void GetInfo()
         {
             firstName = Console.ReadLine();
-            string lastName = Console.ReadLine();
-            string emailAddress = Console.ReadLine();
+            lastName = Console.ReadLine();
+            emailAddress = Console.ReadLine();
+            registrationNumber = Console.ReadLine();
+
         }
     }
 }

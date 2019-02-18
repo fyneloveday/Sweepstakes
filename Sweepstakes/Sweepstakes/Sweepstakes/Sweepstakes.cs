@@ -25,7 +25,6 @@ namespace Sweepstakes
         {
             //get random number --> get random registration number
 
-
             //string value = Console.ReadLine();
 
             //foreach (KeyValuePair<string, string> winner in winningContestant)

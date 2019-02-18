@@ -5,7 +5,16 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    public class SweepstakeStackManager
+    public class SweepstakeStackManager : ISweepstakesManager
     {
+        public Sweepstakes GetSweepstakes()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

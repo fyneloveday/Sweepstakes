@@ -10,7 +10,7 @@ namespace Sweepstakes
         Dictionary<int, Contestants> contestants = new Dictionary<int, Contestants>();
         public Sweepstakes()
         {
-
+            string name;
         }
         public void RegisterContestant()
         {
@@ -37,7 +37,8 @@ namespace Sweepstakes
 
         public void PrintContestantInfo(Contestants contestant)
         {
-
+            Contestants contestant = new Contestant();
+            Console.WriteLine(contestant Info)
         }
        
     }

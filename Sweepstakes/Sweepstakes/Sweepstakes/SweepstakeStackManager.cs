@@ -9,29 +9,20 @@ namespace Sweepstakes
     {
         public Sweepstakes GetSweepstakes()
         {
-            static Stack<int> GetStack()
+            Contestants stack = new Contestants();
+            static Stack<int> GetPrizes()
             {
-                Stack<int> stack = new Stack<int>();
-                stack.Push(100);
-                stack.Push(1000);
-                stack.Push(10000);
-                return stack;
-            }
-
-            static void Main()
-            {
-                var stack = GetStack();
-                Console.WriteLine("--- Stack contents ---");
-                foreach (int i in stack)
-                {
-                    Console.WriteLine(i);
-                }
+                Stack<int> sweepstakes = new Stack<int>();
+                sweepstakes.Push(100);
+                sweepstakes.Push(1000);
+                sweepstakes.Push(10000);
+                return sweepstakes;
             }
         }
 
-        public void InsertSweepstakes(Sweepstakes sweepstakes)
-        {
-            throw new NotImplementedException();
-        }
+        //public void InsertSweepstakes(Sweepstakes sweepstakes)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

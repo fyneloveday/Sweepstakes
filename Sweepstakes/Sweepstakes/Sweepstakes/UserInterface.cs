@@ -11,7 +11,7 @@ namespace Sweepstakes
         {
             
             Contestants contestant = new Contestants();
-            contestant.firstName =;
+            contestant.firstName;
             Console.Write("Contestant First Name: ");
             Console.ReadLine();
             

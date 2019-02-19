@@ -15,8 +15,8 @@ namespace Sweepstakes
 
         public int getRegistrationNumber(int min, int max)
         {
-            Random number = new Random();
-            return  number.Next(1, 100);
+            Random registrationNumber = new Random();
+            return  registrationNumber.Next(1, 100);
         }
 
         public void GetInfo()
@@ -24,7 +24,6 @@ namespace Sweepstakes
             firstName = Console.ReadLine();
             lastName = Console.ReadLine();
             emailAddress = Console.ReadLine();
-            registrationNumber = Console.ReadLine();
 
         }
     }
